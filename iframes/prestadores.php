@@ -1,5 +1,5 @@
-<?php include_once DIR.'/lib/handling.php'; include_once DIR.'/lib/queryhandling.php'; ?>
-<?php 
+<?php
+    require_once 'lib/queryhandling.php';
     Session::checkLogin();
 	$user = new Handling(); 
     ?>

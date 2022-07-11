@@ -1,4 +1,3 @@
-<?php include_once DIR.'/lib/handling.php'; ?>
 <?php 
   Session::checkSession();
   $user = new Handling();
@@ -7,7 +6,7 @@
 
 
  
- <div class="container main-body">
+ <div class="container main-body bg-light">
   <div class="row">
    <div class="col-lg-8 col-lg-offset-2">
     <div class="panel panel-default">

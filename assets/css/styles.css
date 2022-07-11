@@ -1,0 +1,162 @@
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+
+hr.dashed {
+  border-top: 2px dashed #999;
+}
+
+hr.dotted {
+  border-top: 2px dotted #999;
+}
+
+hr.solid {
+  border-top: 2px solid #999;
+}
+
+
+hr.hr-text {
+position: relative;
+  border: none;
+  height: 1px;
+  background: #999;
+}
+
+hr.hr-text::before {
+  content: attr(data-content);
+  display: inline-block;
+  background: #fff;
+  font-weight: bold;
+  font-size: 0.85rem;
+  color: #999;
+  border-radius: 30rem;
+  padding: 0.2rem 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+img.sized01 {
+  height: 180px;
+  width: 250px;
+  max-width: 100%;
+  max-height: 100%;
+}
+#navbar_top {
+  margin-left: -7.5rem;
+  margin-right: -7.5rem;
+  overflow: visible;
+  border-radius: 15px;
+  z-index: 10;
+}
+.logo-img{
+  width:40px;
+}
+.content {
+  background-color: coral;
+  padding: 16px;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.sticky + .content {
+  padding-top: 80px;
+}
+
+.vertical-nav {
+  min-width: 17rem;
+  width: 17rem;
+  height: 100vh;
+  margin-top: 5%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s;
+}
+
+.page-content {
+  width: calc(100% - 17rem);
+  margin-left: 17rem;
+  transition: all 0.4s;
+}
+
+/* for toggle behavior */
+
+#sidebar.active {
+  margin-left: -17rem;
+}
+
+#content.active {
+  width: 100%;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  #sidebar {
+    margin-left: -17rem;
+  }
+  #sidebar.active {
+    margin-left: 0;
+  }
+  #content {
+    width: 100%;
+    margin: 0;
+  }
+  #content.active {
+    margin-left: 17rem;
+    width: calc(100% - 17rem);
+  }
+}
+
+body {
+  background: #21003f;
+  background: -webkit-linear-gradient(to right, #21003f, #6e16e0);
+  background: linear-gradient(to right, #21003f, #6e16e0);
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.cadastro{
+  margin-top: 5px;
+  margin-left: 80px;
+  margin-right: 80px;
+  position: absolute;
+  z-index: 0;
+  padding: 30px 13rem;
+  transform: translate(50);
+}
+.cadastro-input {
+  width: 60%;
+}
+.cadastro button{
+  width: 50%;
+  margin-left: 8rem;
+}
+.div-label{
+  margin-left: -1rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form-group {
+  padding-left: 4rem;
+}
+.box-check {
+  padding-left: 60px;
+}
+#dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0px;
+  max-width: 15rem;
+  right: 10px;
+}
+
+main {
+  z-index: inherit;
+}
